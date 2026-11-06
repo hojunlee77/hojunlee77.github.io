@@ -13,14 +13,14 @@
       <div class="eyebrow">PocketTap</div>
       <h1>Privacy Policy</h1>
       <p class="lede">PocketTap is designed to keep your files close without collecting them.</p>
-      <p class="meta">Effective September 19, 2026</p>
+      <p class="meta">Effective November 6, 2026</p>
     </header>
 
     <section class="language" lang="en">
       <h2>English</h2>
 
       <h3>Summary</h3>
-      <p>PocketTap does not create an account, show advertising, track you, or send your files to the developer. Files you add are stored locally in the app’s shared container so the app, Share Extension, and widgets can access them on your device.</p>
+      <p>PocketTap does not create an account, show advertising, track you, or send your files to the developer. Files you add are stored locally in the app’s shared container so the app, Share Extension, and widgets can access them on your device. A new installation also sends a few anonymous usage steps to the developer, as described under Usage counts.</p>
 
       <h3>Files and local data</h3>
       <p>When you explicitly share a file or photo to PocketTap, the app saves a local copy. PocketTap also stores the minimum metadata needed to show and open that item, including its display name, file type, added date, order, identifier, and a small thumbnail when available.</p>
@@ -29,11 +29,17 @@
       <h3>Purchases</h3>
       <p>PocketTap Pro is processed by Apple through StoreKit. PocketTap reads Apple-verified entitlement information to determine whether Pro features are available. The developer does not receive or store your payment card details.</p>
 
+      <h3>Usage counts</h3>
+      <p>From version 1.5, a new installation of PocketTap tells the developer’s server the first time it reaches each of six steps: first launch, first saved file, first file opened from a widget, the Lock Screen or a Quick Action, first view of the Pro screen, first tap on the purchase button, and first completed purchase. Each step is sent at most once per installation, so the developer can see where new users stop.</p>
+      <p>A request contains only the step name and the app version. It contains no file names or contents, no account, device or installation identifier, and no location. If a request fails, the app tries again on a later launch.</p>
+      <p>The server runs on Cloudflare Workers. It adds one to a daily total for that step and app version and stores nothing else. It does not store IP addresses or request details and keeps no request logs. Like any internet connection, the request reaches Cloudflare with your IP address so it can be delivered. The totals cannot be linked to you or to your device.</p>
+      <p>Installations that used PocketTap before version 1.5 send nothing. Development builds send nothing.</p>
+
       <h3>Analytics, advertising, and tracking</h3>
-      <p>PocketTap does not include third-party analytics, advertising SDKs, crash-reporting SDKs, or cross-app tracking. PocketTap does not sell or share personal data.</p>
+      <p>PocketTap does not include third-party analytics, advertising SDKs, crash-reporting SDKs, or cross-app tracking. Apart from the usage counts above, nothing leaves the app for the developer. PocketTap does not sell or share personal data.</p>
 
       <h3>Retention and deletion</h3>
-      <p>You can remove an item from PocketTap at any time; its saved copy and cached thumbnail are then deleted from PocketTap storage. Removing the app deletes its local app data according to iOS system behavior. Apple may retain purchase records under its own policies.</p>
+      <p>You can remove an item from PocketTap at any time; its saved copy and cached thumbnail are then deleted from PocketTap storage. Removing the app deletes its local app data according to iOS system behavior. Apple may retain purchase records under its own policies. The daily usage totals contain nothing that identifies a person, so there is nothing to delete for one user; the developer deletes them when they are no longer needed.</p>
 
       <h3>Children</h3>
       <p>PocketTap does not knowingly collect personal information from children or any other users.</p>
@@ -49,7 +55,7 @@
       <h2>한국어</h2>
 
       <h3>요약</h3>
-      <p>포켓탭은 계정을 만들거나, 광고를 표시하거나, 사용자를 추적하거나, 사용자의 파일을 개발자에게 전송하지 않습니다. 추가한 파일은 앱, 공유 확장 프로그램, 위젯이 같은 기기에서 사용할 수 있도록 앱의 공유 컨테이너에 로컬로 저장됩니다.</p>
+      <p>포켓탭은 계정을 만들거나, 광고를 표시하거나, 사용자를 추적하거나, 사용자의 파일을 개발자에게 전송하지 않습니다. 추가한 파일은 앱, 공유 확장 프로그램, 위젯이 같은 기기에서 사용할 수 있도록 앱의 공유 컨테이너에 로컬로 저장됩니다. 새로 설치한 앱은 아래 ‘사용 단계 집계’에 적힌 익명의 사용 단계를 개발자에게 보냅니다.</p>
 
       <h3>파일과 로컬 데이터</h3>
       <p>사용자가 파일이나 사진을 포켓탭에 명시적으로 공유하면 앱은 로컬 사본을 저장합니다. 또한 항목을 표시하고 열기 위해 필요한 최소 정보인 표시 이름, 파일 형식, 추가 날짜, 순서, 식별자와 가능한 경우 작은 썸네일을 저장합니다.</p>
@@ -58,11 +64,17 @@
       <h3>구매</h3>
       <p>포켓탭 Pro 구매는 Apple의 StoreKit을 통해 처리됩니다. 포켓탭은 Pro 기능 제공 여부를 판단하기 위해 Apple이 검증한 구매 권한 정보를 확인합니다. 개발자는 사용자의 결제 카드 정보를 받거나 저장하지 않습니다.</p>
 
+      <h3>사용 단계 집계</h3>
+      <p>버전 1.5부터 새로 설치한 포켓탭은 여섯 단계에 처음 도달할 때 개발자 서버에 알립니다. 여섯 단계는 첫 실행, 첫 파일 저장, 위젯·잠금 화면·빠른 동작으로 처음 연 파일, Pro 화면 첫 보기, 구매 버튼 첫 탭, 첫 구매 완료입니다. 각 단계는 설치마다 한 번만 보냅니다. 개발자는 이 정보로 새 사용자가 어느 단계에서 멈추는지 확인합니다.</p>
+      <p>요청에는 단계 이름과 앱 버전만 들어 있습니다. 파일 이름이나 내용, 계정·기기·설치 식별자, 위치는 들어 있지 않습니다. 전송에 실패하면 다음 실행 때 다시 보냅니다.</p>
+      <p>서버는 Cloudflare Workers에서 실행됩니다. 서버는 해당 단계와 앱 버전의 하루 합계에 1을 더하고, 다른 것은 저장하지 않습니다. IP 주소와 요청 내용을 저장하지 않고 요청 로그도 남기지 않습니다. 다른 인터넷 연결과 같이, 요청을 전달하기 위해 Cloudflare는 IP 주소를 받습니다. 합계는 사용자나 기기와 연결할 수 없습니다.</p>
+      <p>버전 1.5 이전부터 포켓탭을 사용한 설치는 아무것도 보내지 않습니다. 개발용 빌드도 보내지 않습니다.</p>
+
       <h3>분석, 광고와 추적</h3>
-      <p>포켓탭에는 외부 분석, 광고, 충돌 보고 SDK 또는 앱 간 추적 기능이 없습니다. 포켓탭은 개인정보를 판매하거나 공유하지 않습니다.</p>
+      <p>포켓탭에는 외부 분석, 광고, 충돌 보고 SDK 또는 앱 간 추적 기능이 없습니다. 위 사용 단계 집계 외에는 앱에서 개발자에게 전송되는 정보가 없습니다. 포켓탭은 개인정보를 판매하거나 공유하지 않습니다.</p>
 
       <h3>보관과 삭제</h3>
-      <p>포켓탭에서 항목을 언제든 제거할 수 있으며, 제거 시 포켓탭 저장 공간의 사본과 캐시된 썸네일도 삭제됩니다. 앱을 삭제하면 iOS의 시스템 동작에 따라 로컬 앱 데이터가 삭제됩니다. 구매 기록은 Apple의 정책에 따라 Apple이 보관할 수 있습니다.</p>
+      <p>포켓탭에서 항목을 언제든 제거할 수 있으며, 제거 시 포켓탭 저장 공간의 사본과 캐시된 썸네일도 삭제됩니다. 앱을 삭제하면 iOS의 시스템 동작에 따라 로컬 앱 데이터가 삭제됩니다. 구매 기록은 Apple의 정책에 따라 Apple이 보관할 수 있습니다. 사용 단계의 하루 합계에는 개인을 식별할 정보가 없으므로 개인별로 삭제할 데이터가 없습니다. 개발자는 합계가 더 필요하지 않으면 삭제합니다.</p>
 
       <h3>아동의 개인정보</h3>
       <p>포켓탭은 아동을 포함한 어떠한 사용자의 개인정보도 의도적으로 수집하지 않습니다.</p>
